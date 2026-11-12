@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ef">
+  <title>Cobella — Luxury Hair Salon & Spa, Kensington London</title>
+  <meta name="description" content="Discover Cobella, a luxury hair salon and spa at 5 Kensington High Street, London. Explore haircuts, colour, styling, extensions and treatments.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.cobella.co.uk/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cobella — Beauty, Refined.">
+  <meta property="og:description" content="Exceptional hair artistry and personalised care in Kensington, London.">
+  <meta property="og:url" content="https://www.cobella.co.uk/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1600&q=85">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--ivory:#f7f4ef;--cream:#ede7df;--champagne:#d8c9b8;--taupe:#a99a8b;--ink:#252321;--white:#fff;--line:rgba(37,35,33,.18);--serif:"Cormorant Garamond",Georgia,serif;--sans:"Manrope",Arial,sans-serif;--gutter:clamp(22px,5.2vw,86px)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);font-weight:400;-webkit-font-smoothing:antialiased}body.menu-open{overflow:hidden}a{color:inherit;text-decoration:none}button{font:inherit}img{display:block;max-width:100%;width:100%;object-fit:cover}::selection{background:var(--champagne);color:var(--ink)}
+    .progress{position:fixed;inset:0 auto auto 0;height:2px;background:var(--taupe);width:0;z-index:1000}
+    .site-header{position:fixed;z-index:100;top:0;left:0;width:100%;height:88px;padding:0 var(--gutter);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;color:#fff;transition:background .35s,color .35s,height .35s,border-color .35s;border-bottom:1px solid rgba(255,255,255,.22)}
+    .site-header.scrolled{height:72px;background:rgba(247,244,239,.96);color:var(--ink);backdrop-filter:blur(14px);border-color:var(--line)}
+    .wordmark{font-family:var(--serif);font-size:31px;letter-spacing:.19em;font-weight:600;line-height:1}
+    .desktop-nav{display:flex;gap:clamp(18px,2.4vw,38px);align-items:center}.desktop-nav a,.book-link,.eyebrow,.text-link,.btn{font-size:9px;letter-spacing:.17em;text-transform:uppercase;font-weight:600}
+    .desktop-nav a{position:relative;padding:9px 0}.desktop-nav a:after{content:"";position:absolute;left:0;bottom:2px;width:0;height:1px;background:currentColor;transition:width .3s}.desktop-nav a:hover:after{width:100%}
+    .header-right{display:flex;justify-content:flex-end;align-items:center;gap:22px}.book-link{border-bottom:1px solid currentColor;padding:9px 0;white-space:nowrap}.menu-toggle{display:none;border:0;background:none;color:inherit;padding:10px;cursor:pointer}
+    .hero{min-height:100svh;height:760px;max-height:1000px;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#514a43;color:#fff}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,16,15,.52),rgba(18,16,15,.12) 70%),linear-gradient(0deg,rgba(18,16,15,.42),transparent 60%);z-index:1}
+    .hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 43%;animation:heroReveal 1.4s cubic-bezier(.2,.7,.2,1) both;transform:scale(1.035)}
+    @keyframes heroReveal{from{opacity:.45;transform:scale(1.09)}to{opacity:1;transform:scale(1.035)}}
+    .hero-content{position:relative;z-index:2;padding:0 var(--gutter) clamp(76px,10vh,125px);max-width:1050px}
+    .eyebrow{display:block;letter-spacing:.24em;margin-bottom:25px}.hero h1{font-family:var(--serif);font-size:clamp(76px,12vw,174px);font-weight:400;line-height:.78;letter-spacing:-.045em;margin:0 0 32px;max-width:900px}
+    .hero-copy{font-size:clamp(12px,1.15vw,15px);line-height:1.9;letter-spacing:.035em;max-width:430px;color:rgba(255,255,255,.88);margin:0 0 32px}
+    .hero-actions{display:flex;gap:28px;align-items:center;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border:1px solid currentColor;transition:background .3s,color .3s,border-color .3s}.btn-light{background:var(--ivory);border-color:var(--ivory);color:var(--ink)}.btn-light:hover{background:transparent;color:#fff}.btn-outline{color:#fff}.btn-outline:hover{background:#fff;color:var(--ink)}
+    .scroll-note{position:absolute;z-index:2;right:var(--gutter);bottom:40px;writing-mode:vertical-rl;font-size:8px;letter-spacing:.22em;text-transform:uppercase;display:flex;align-items:center;gap:15px}.scroll-note:after{content:"";height:55px;width:1px;background:rgba(255,255,255,.7)}
+    .section{padding:clamp(90px,12vw,170px) var(--gutter)}.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:55px}.eyebrow.dark{color:#887b6f}.section h2{font-family:var(--serif);font-size:clamp(52px,7vw,100px);font-weight:400;line-height:.9;letter-spacing:-.035em;margin:0}.intro{display:grid;grid-template-columns:1.03fr .97fr;gap:clamp(40px,9vw,145px);align-items:center}.intro-visual{position:relative;min-height:620px}.intro-visual img{height:620px;object-position:center}.image-caption{position:absolute;bottom:-18px;right:-18px;background:var(--cream);padding:18px 24px;font-family:var(--serif);font-size:20px;font-style:italic}
+    .intro-copy{padding:35px 0;max-width:520px}.intro-copy h2{margin:0 0 30px}.intro-copy p,.body-copy{font-size:13px;line-height:2.05;color:#625b54;max-width:460px}.text-link{display:inline-flex;gap:18px;align-items:center;margin-top:25px;padding-bottom:10px;border-bottom:1px solid var(--ink)}.text-link span{font-size:16px;transition:transform .25s}.text-link:hover span{transform:translateX(5px)}
+    .services{background:var(--cream)}.services-top{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:62px;gap:25px}.services-top .body-copy{max-width:320px;margin:0 0 4px}.service-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}.service{position:relative;overflow:hidden;min-height:420px;background:#d0c4b7;color:#fff}.service:nth-child(1){grid-column:span 5}.service:nth-child(2){grid-column:span 7;margin-top:90px}.service:nth-child(3){grid-column:span 7}.service:nth-child(4){grid-column:span 5;margin-top:90px}.service img{position:absolute;inset:0;height:100%;transition:transform .8s cubic-bezier(.2,.7,.2,1);filter:brightness(.78)}.service:hover img{transform:scale(1.055)}.service:after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.48))}.service-label{position:absolute;z-index:2;left:30px;right:30px;bottom:28px;display:flex;justify-content:space-between;align-items:flex-end}.service-label h3{font:400 clamp(34px,4vw,56px)/.95 var(--serif);margin:0}.service-label span{font-size:24px}
+    .experience{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(45px,9vw,140px);align-items:center}.experience-copy h2{margin-bottom:32px}.experience-copy .body-copy{margin-bottom:25px}.experience-image{height:700px;position:relative}.experience-image img{height:100%}.experience-image:after{content:"";position:absolute;left:-20px;bottom:-20px;width:42%;height:45%;border:1px solid var(--taupe);z-index:-1}
+    .team{background:#e7dfd6}.team-intro{display:flex;justify-content:space-between;align-items:flex-end;gap:35px;margin-bottom:52px}.team-intro .body-copy{max-width:350px;margin:0}.team-feature{display:grid;grid-template-columns:1.15fr .85fr;min-height:560px;background:var(--ivory)}.team-feature img{height:100%;min-height:560px}.team-info{padding:clamp(35px,6vw,80px);display:flex;flex-direction:column;justify-content:center}.team-info .name{font:400 clamp(42px,5vw,68px)/.95 var(--serif);margin:0 0 12px}.role{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#887b6f}.team-info p{font-size:12px;line-height:2;color:#625b54;max-width:370px;margin:30px 0 10px}
+    .gallery{padding-bottom:clamp(90px,11vw,150px)}.gallery-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:45px;gap:30px}.gallery-grid{display:grid;grid-template-columns:1.05fr .72fr 1fr;grid-template-rows:260px 250px;gap:16px}.gallery-grid button{padding:0;border:0;background:none;overflow:hidden;cursor:zoom-in}.gallery-grid button:nth-child(1){grid-row:span 2}.gallery-grid button:nth-child(4){grid-column:2/4}.gallery-grid img{height:100%;transition:transform .7s}.gallery-grid button:hover img{transform:scale(1.04)}
+    .booking{background:var(--ink);color:var(--ivory);text-align:center;padding:clamp(95px,12vw,160px) var(--gutter)}.booking .eyebrow{color:var(--champagne)}.booking h2{max-width:900px;margin:0 auto 28px}.booking p{font-size:12px;line-height:2;color:#c9c0b6;max-width:450px;margin:0 auto 36px}.booking .btn{color:var(--ink);background:var(--ivory);border-color:var(--ivory)}.booking .btn:hover{background:transparent;color:var(--ivory)}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,8vw,120px);align-items:center}.contact-copy h2{margin-bottom:35px}.contact-details{display:grid;gap:22px;margin-top:35px}.contact-item .label{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#887b6f;margin-bottom:7px}.contact-item a,.contact-item address{font-size:13px;font-style:normal;line-height:1.8}.map-frame{height:520px;border:0;width:100%;filter:grayscale(1) contrast(.9)}
+    footer{background:var(--cream);padding:65px var(--gutter) 25px}.footer-top{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:35px;padding-bottom:65px}.footer-brand .wordmark{font-size:42px}.footer-brand p{font:italic 21px var(--serif);color:#6d655e;max-width:210px;line-height:1.3}.footer-col h4{font-size:8px;letter-spacing:.2em;text-transform:uppercase;margin:7px 0 22px}.footer-col a,.footer-col p{display:block;font-size:11px;color:#625b54;margin:0 0 13px;line-height:1.7}.footer-col a:hover{color:#000}.footer-bottom{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;gap:20px;font-size:9px;color:#776f67}
+    .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}.reveal.visible{opacity:1;transform:none}
+    .lightbox{position:fixed;inset:0;z-index:300;background:rgba(20,18,16,.94);display:none;align-items:center;justify-content:center;padding:30px}.lightbox.open{display:flex}.lightbox img{max-width:min(1100px,90vw);max-height:85vh;width:auto}.lightbox-close{position:absolute;right:28px;top:20px;background:none;border:0;color:#fff;font-size:34px;cursor:pointer}
+    .mobile-panel{display:none}
+    @media(max-width:1000px){.site-header{grid-template-columns:1fr auto}.desktop-nav{display:none}.header-right{grid-column:2}.menu-toggle{display:block}.mobile-panel{position:fixed;z-index:99;inset:0;background:var(--ivory);color:var(--ink);display:flex;flex-direction:column;justify-content:center;padding:100px var(--gutter) 50px;transform:translateY(-102%);transition:transform .55s cubic-bezier(.7,0,.2,1)}.mobile-panel.open{transform:translateY(0)}.mobile-panel a{font:400 clamp(38px,8vw,62px)/1.2 var(--serif);border-bottom:1px solid var(--line);padding:8px 0}.mobile-panel .mobile-book{font:600 10px var(--sans);letter-spacing:.2em;text-transform:uppercase;margin-top:30px;border:0}.intro{gap:50px}.intro-visual,.intro-visual img{min-height:500px;height:500px}.experience-image{height:570px}.footer-top{grid-template-columns:1fr 1fr}}
+    @media(max-width:700px){.site-header{height:70px}.site-header.scrolled{height:64px}.wordmark{font-size:27px}.header-right{gap:12px}.header-right>.book-link{display:none}.hero{height:88svh;min-height:650px}.hero-content{padding-bottom:95px}.hero h1{font-size:clamp(72px,18vw,120px)}.hero-copy{max-width:310px}.scroll-note{right:20px;bottom:25px}.section{padding:88px var(--gutter)}.section-head,.services-top,.team-intro,.gallery-head{display:block}.section-head .body-copy,.services-top .body-copy,.team-intro .body-copy{margin-top:25px}.intro,.experience,.contact{grid-template-columns:1fr}.intro{gap:55px}.intro-visual,.intro-visual img{height:420px;min-height:420px}.image-caption{right:0}.intro-copy{padding:0}.services-top{margin-bottom:40px}.service-grid{display:block}.service{height:390px;min-height:390px;margin:0 0 16px!important}.service:nth-child(even){margin-left:30px!important}.service-label{left:22px;right:22px;bottom:22px}.experience{gap:45px}.experience-image{height:440px;margin-left:20px}.team-feature{grid-template-columns:1fr}.team-feature img{height:430px;min-height:0}.team-info{padding:38px 28px 45px}.gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:210px 170px 190px;gap:9px}.gallery-grid button:nth-child(1){grid-row:span 2}.gallery-grid button:nth-child(4){grid-column:1/3}.gallery-head .text-link{margin-top:22px}.booking h2{font-size:clamp(50px,13vw,76px)}.contact{gap:45px}.map-frame{height:360px}.footer-top{grid-template-columns:1fr 1fr;gap:38px 24px}.footer-brand{grid-column:1/3}.footer-bottom{display:block;line-height:2}.footer-bottom span{display:block}.mobile-panel{padding-top:85px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"HairSalon","name":"Cobella","url":"https://www.cobella.co.uk/","telephone":"+442079378888","email":"reception@cobella.co.uk","address":{"@type":"PostalAddress","streetAddress":"5 Kensington High Street","addressLocality":"London","postalCode":"W8 5NP","addressCountry":"GB"},"sameAs":["https://www.instagram.com/cobellasalon/"]}
+  </script>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <header class="site-header" id="header">
+    <a class="wordmark" href="#home" aria-label="Cobella home">COBELLA</a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#team">Team</a><a href="#journal">Gallery</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-right">
+      <a class="book-link" href="https://s-iq.co/BookingPortal/dist/?salonid=82c07779-53cb-47d0-9afb-b8e31bf8384d&tab=contact" target="_blank" rel="noopener">Book an appointment ↗</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobilePanel"><span style="font-size:23px">☰</span></button>
+    </div>
+  </header>
+  <nav class="mobile-panel" id="mobilePanel" aria-label="Mobile navigation">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#team">Team</a><a href="#journal">Gallery</a><a href="#contact">Contact</a>
+    <a class="mobile-book" href="https://s-iq.co/BookingPortal/dist/?salonid=82c07779-53cb-47d0-9afb-b8e31bf8384d&tab=contact" target="_blank" rel="noopener">Book an appointment ↗</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home" aria-label="Cobella luxury hair salon">
+      <!-- Editorial stock imagery is used for this concept preview; replace with approved Cobella photography before publication. -->
+      <img class="hero-image" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=2200&q=90" alt="Editorial beauty portrait with softly styled hair" fetchpriority="high">
+      <div class="hero-content">
+        <span class="eyebrow">Kensington · London · Hair &amp; Beauty</span>
+        <h1>BEAUTY,<br>REFINED.</h1>
+        <p class="hero-copy">Exceptional hair artistry. Personalised care. An experience beyond the ordinary.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="https://s-iq.co/BookingPortal/dist/?salonid=82c07779-53cb-47d0-9afb-b8e31bf8384d&tab=contact" target="_blank" rel="noopener">Book your experience ↗</a>
+          <a class="btn btn-outline" href="#about">Discover Cobella</a>
+        </div>
+      </div>
+      <div class="scroll-note">Scroll to discover</div>
+    </section>
+
+    <section class="section intro" id="about">
+      <div class="intro-visual reveal">
+        <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1300&q=85" alt="Elegant contemporary hair salon interior" loading="lazy">
+        <div class="image-caption">The Cobella experience</div>
+      </div>
+      <div class="intro-copy reveal">
+        <span class="eyebrow dark">A salon with a point of view</span>
+        <h2>WHERE EXPERTISE MEETS ELEGANCE.</h2>
+        <p>Cobella brings world-class hairdressing and beauty together under one roof. Inspired by the New York day spa-salon concept, the experience is shaped by creative expertise, thoughtful care and the people behind every visit.</p>
+        <p>At its heart is a simple belief: the human element makes the difference. Every guest deserves to feel welcomed, understood and exceptionally well cared for.</p>
+        <a class="text-link" href="https://www.cobella.co.uk/cobellasalon" target="_blank" rel="noopener">Discover the salon <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="services-top reveal">
+        <div><span class="eyebrow dark">The craft of beautiful hair</span><h2>THE ART OF<br>PERSONAL STYLE.</h2></div>
+        <p class="body-copy">A considered approach to hair, colour and care. Explore the service categories offered at Cobella and find the right starting point for your next visit.</p>
+      </div>
+      <div class="service-grid">
+        <a class="service reveal" href="https://www.cobella.co.uk/haircuts" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1100&q=85" alt="Hair stylist working on a haircut" loading="lazy"><div class="service-label"><h3>Haircuts</h3><span>↗</span></div></a>
+        <a class="service reveal" href="https://www.cobella.co.uk/colour" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=1300&q=85" alt="Close-up of dimensional hair colour" loading="lazy"><div class="service-label"><h3>Colour</h3><span>↗</span></div></a>
+        <a class="service reveal" href="https://www.cobella.co.uk/styling" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=1300&q=85" alt="Long hair styled in soft waves" loading="lazy"><div class="service-label"><h3>Styling</h3><span>↗</span></div></a>
+        <a class="service reveal" href="https://www.cobella.co.uk/extensions" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1100&q=85" alt="Haircare and styling detail" loading="lazy"><div class="service-label"><h3>Extensions</h3><span>↗</span></div></a>
+      </div>
+      <div style="margin-top:34px" class="reveal"><a class="text-link" href="https://www.cobella.co.uk/blank-3" target="_blank" rel="noopener">Explore treatments, scalp care &amp; hair loss support <span>↗</span></a></div>
+    </section>
+
+    <section class="section experience">
+      <div class="experience-copy reveal">
+        <span class="eyebrow dark">More than a moment in the chair</span>
+        <h2>THE COBELLA<br>EXPERIENCE.</h2>
+        <p class="body-copy">From the first conversation to the finishing detail, Cobella’s philosophy puts people at the centre. Creative professionals, individual attention and a nurturing environment come together to make each visit feel considered.</p>
+        <p class="body-copy">Your appointment begins with a conversation. For service advice or to discuss what may suit you, contact the salon directly.</p>
+        <a class="text-link" href="mailto:reception@cobella.co.uk">Talk to the team <span>↗</span></a>
+      </div>
+      <div class="experience-image reveal"><img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d5?auto=format&fit=crop&w=1400&q=85" alt="Beautifully lit salon styling station" loading="lazy"></div>
+    </section>
+
+    <section class="section team" id="team">
+      <div class="team-intro reveal">
+        <div><span class="eyebrow dark">The people behind the craft</span><h2>MEET THE<br>ARTISTS.</h2></div>
+        <p class="body-copy">A creative team bringing together different skills, perspectives and experience. Meet the full Cobella team on the official website.</p>
+      </div>
+      <div class="team-feature reveal">
+        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=1300&q=85" alt="Editorial portrait representing the creative world of hairdressing" loading="lazy">
+        <div class="team-info">
+          <span class="eyebrow dark">Creative direction</span>
+          <h3 class="name">Jordanna<br>Cobella</h3>
+          <div class="role">Creative Director / Owner</div>
+          <p>Jordanna is listed as Cobella’s Creative Director and Owner. For the full current team roster and roles, visit the salon’s official team page.</p>
+          <a class="text-link" href="https://www.cobella.co.uk/cobellateam" target="_blank" rel="noopener">Meet the Cobella team <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="journal">
+      <div class="gallery-head reveal">
+        <div><span class="eyebrow dark">A visual note from Cobella</span><h2>THE DETAILS<br>MATTER.</h2></div>
+        <a class="text-link" href="https://www.instagram.com/cobellasalon/" target="_blank" rel="noopener">Explore Cobella on Instagram <span>↗</span></a>
+      </div>
+      <div class="gallery-grid reveal" aria-label="Editorial beauty image gallery">
+        <button type="button" aria-label="Enlarge gallery image"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1100&q=85" alt="Editorial hair and beauty portrait" loading="lazy"></button>
+        <button type="button" aria-label="Enlarge gallery image"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=85" alt="Hair styling in a salon" loading="lazy"></button>
+        <button type="button" aria-label="Enlarge gallery image"><img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=900&q=85" alt="Hair colour detail" loading="lazy"></button>
+        <button type="button" aria-label="Enlarge gallery image"><img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1400&q=85" alt="Salon interior detail" loading="lazy"></button>
+      </div>
+      <p class="body-copy" style="margin-top:22px;font-size:10px">Editorial imagery shown for design direction only; it is not represented as Cobella client work or salon photography.</p>
+    </section>
+
+    <section class="booking" id="booking">
+      <span class="eyebrow">Make time for yourself</span>
+      <h2>YOUR NEXT HAIR EXPERIENCE STARTS HERE.</h2>
+      <p>Discover personalised hair services delivered with expertise and care. Book through Cobella’s official appointment platform.</p>
+      <a class="btn" href="https://s-iq.co/BookingPortal/dist/?salonid=82c07779-53cb-47d0-9afb-b8e31bf8384d&tab=contact" target="_blank" rel="noopener">Reserve your appointment ↗</a>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-copy reveal">
+        <span class="eyebrow dark">Find us in Kensington</span>
+        <h2>A PLACE TO<br>FEEL YOUR BEST.</h2>
+        <p class="body-copy">Visit Cobella on Kensington High Street. For appointments, service enquiries or assistance, contact the salon directly.</p>
+        <div class="contact-details">
+          <div class="contact-item"><div class="label">Visit</div><address>5 Kensington High Street<br>London, W8 5NP</address></div>
+          <div class="contact-item"><div class="label">Call</div><a href="tel:+442079378888">+44 (0)20 7937 8888</a></div>
+          <div class="contact-item"><div class="label">Email</div><a href="mailto:reception@cobella.co.uk">reception@cobella.co.uk</a></div>
+          <div class="contact-item"><div class="label">Social</div><a href="https://www.instagram.com/cobellasalon/" target="_blank" rel="noopener">@cobellasalon ↗</a></div>
+        </div>
+        <a class="text-link" style="margin-top:35px" href="https://maps.app.goo.gl/bEfJrS8XJVnaZxWAA" target="_blank" rel="noopener">Get directions <span>↗</span></a>
+      </div>
+      <div class="reveal"><iframe class="map-frame" title="Map showing Cobella at 5 Kensington High Street, London" src="https://www.google.com/maps?q=5%20Kensington%20High%20Street%2C%20London%20W8%205NP&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand"><a class="wordmark" href="#home">COBELLA</a><p>Beauty, refined.<br>Kensington, London.</p></div>
+      <div class="footer-col"><h4>Explore</h4><a href="#about">About the salon</a><a href="#services">Services</a><a href="#team">Our team</a><a href="#journal">Gallery</a></div>
+      <div class="footer-col"><h4>Services</h4><a href="https://www.cobella.co.uk/haircuts">Haircuts</a><a href="https://www.cobella.co.uk/colour">Colour</a><a href="https://www.cobella.co.uk/styling">Styling</a><a href="https://www.cobella.co.uk/extensions">Extensions</a><a href="https://www.cobella.co.uk/blank-3">Treatments &amp; care</a></div>
+      <div class="footer-col"><h4>Contact</h4><p>5 Kensington High Street<br>London, W8 5NP</p><a href="tel:+442079378888">+44 (0)20 7937 8888</a><a href="mailto:reception@cobella.co.uk">reception@cobella.co.uk</a><a href="https://www.instagram.com/cobellasalon/" target="_blank" rel="noopener">Instagram ↗</a><a href="https://s-iq.co/BookingPortal/dist/?salonid=82c07779-53cb-47d0-9afb-b8e31bf8384d&tab=contact" target="_blank" rel="noopener">Book an appointment ↗</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Cobella. All rights reserved.</span><span>Designed with restraint. Made for the details.</span></div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged gallery image">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">×</button><img id="lightboxImage" alt="">
+  </div>
+
+  <script>
+    const header=document.getElementById('header'),progress=document.getElementById('progress');
+    const toggle=document.getElementById('menuToggle'),panel=document.getElementById('mobilePanel');
+    function onScroll(){const y=window.scrollY,max=document.documentElement.scrollHeight-window.innerHeight;header.classList.toggle('scrolled',y>40);progress.style.width=(max>0?y/max*100:0)+'%'}
+    window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+    function closeMenu(){panel.classList.remove('open');document.body.classList.remove('menu-open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open menu');toggle.innerHTML='<span style="font-size:23px">☰</span>'}
+    toggle.addEventListener('click',()=>{const open=!panel.classList.contains('open');panel.classList.toggle('open',open);document.body.classList.toggle('menu-open',open);toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Close menu':'Open menu');toggle.innerHTML=open?'<span style="font-size:28px">×</span>':'<span style="font-size:23px">☰</span>'});
+    panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeMenu();lightbox.classList.remove('open')}});
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+    const lightbox=document.getElementById('lightbox'),lightboxImage=document.getElementById('lightboxImage');
+    document.querySelectorAll('.gallery-grid button').forEach(button=>button.addEventListener('click',()=>{const img=button.querySelector('img');lightboxImage.src=img.src;lightboxImage.alt=img.alt;lightbox.classList.add('open');document.getElementById('lightboxClose').focus()}));
+    document.getElementById('lightboxClose').addEventListener('click',()=>lightbox.classList.remove('open'));
+    lightbox.addEventListener('click',e=>{if(e.target===lightbox)lightbox.classList.remove('open')});
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
